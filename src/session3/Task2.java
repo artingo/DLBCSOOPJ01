@@ -85,7 +85,7 @@ public class Task2 {
     private static int[] generateRandomNumbers() {
         return ThreadLocalRandom
                 .current()
-                .ints(1, 49)
+                .ints(1, 49 + 1)
                 .limit(6)
                 .distinct()
                 .sorted()
