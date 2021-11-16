@@ -47,11 +47,11 @@ public class Task3 {
 
     /**
      * Adds two fractions and returns the result as fraction
-     * @param a as Fraction - the first fraction
-     * @param b as Fraction - the second fraction
+     * @param first as Fraction - the first fraction
+     * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
-    private Fraction addFractions(Fraction a, Fraction b) {
+    private Fraction addFractions(Fraction first, Fraction second) {
         // write your code here
         Fraction result = new Fraction(1, 3);
         return result;
@@ -59,11 +59,11 @@ public class Task3 {
 
     /**
      * Subtracts two fractions and returns the result as fraction
-     * @param a as Fraction - the first fraction
-     * @param b as Fraction - the second fraction
+     * @param first as Fraction - the first fraction
+     * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
-    private Fraction subtractFractions(Fraction a, Fraction b) {
+    private Fraction subtractFractions(Fraction first, Fraction second) {
         // write your code here
         Fraction result = new Fraction(2, 3);
         return result;
@@ -71,11 +71,11 @@ public class Task3 {
 
     /**
      * Multiplies two fractions and returns the result as fraction
-     * @param a as Fraction - the first fraction
-     * @param b as Fraction - the second fraction
+     * @param first as Fraction - the first fraction
+     * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
-    private Fraction multiplyFractions(Fraction a, Fraction b) {
+    private Fraction multiplyFractions(Fraction first, Fraction second) {
         // write your code here
         Fraction result = new Fraction(3, 3);
         return result;
@@ -83,11 +83,11 @@ public class Task3 {
 
     /**
      * Divides two fractions and returns the result as fraction
-     * @param a as Fraction - the first fraction
-     * @param b as Fraction - the second fraction
+     * @param first as Fraction - the first fraction
+     * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
-    private Fraction divideFractions(Fraction a, Fraction b) {
+    private Fraction divideFractions(Fraction first, Fraction second) {
         // write your code here
         Fraction result = new Fraction(4, 3);
         return result;
