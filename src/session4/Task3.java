@@ -22,15 +22,15 @@ import java.util.Scanner;
  */
 public class Task3 {
     public static void main(String[] args) {
+        Task3 instance = new Task3();
         Scanner scanner = new Scanner(System.in);
 
         // get 4 numbers from the user, i.e. 2 fractions
         // write your code from here
-        Fraction a = null, b = null;
-
+        Fraction a = instance.inputFraction(scanner);
+        Fraction b = instance.inputFraction(scanner);
         // until here --------------
         scanner.close();
-        Task3 instance = new Task3();
 
         Fraction additionResult = instance.addFractions(a, b);
         System.out.println("additionResult = " + additionResult);
@@ -46,6 +46,20 @@ public class Task3 {
     }
 
     /**
+     * Scans 2 integers and returns the corresponding fraction
+     * @param scanner as Scanner
+     * @return fraction as Fraction
+     */
+    private Fraction inputFraction(Scanner scanner) {
+        System.out.print("Please input the numerator: ");
+        int numerator = scanner.nextInt();
+        System.out.print("Please input the denominator: ");
+        int denominator = scanner.nextInt();
+        Fraction newFraction = new Fraction(numerator, denominator);
+        return newFraction;
+    }
+
+    /**
      * Adds two fractions and returns the result as fraction
      * @param a as Fraction - the first fraction
      * @param b as Fraction - the second fraction
@@ -53,6 +67,7 @@ public class Task3 {
      */
     private Fraction addFractions(Fraction a, Fraction b) {
         // write your code here
+        // (a*d + b*c) / (b*d)
         Fraction result = new Fraction(1, 3);
         return result;
     }

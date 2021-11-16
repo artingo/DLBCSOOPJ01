@@ -26,8 +26,14 @@ public class Task1 {
      */
     private int findSmallestNumber(int[] values) {
         // write your code here
-
-        return 0;
+        int smallest = Integer.MAX_VALUE;
+        for (int i = 0; i < values.length; i++) {
+            int current = values[i];
+            if (current < smallest) {
+                smallest = current;
+            }
+        }
+        return smallest;
     }
 
     /**
@@ -37,7 +43,13 @@ public class Task1 {
      */
     private int findBiggestNumber(int[] values) {
         // write your code here
-
-        return 0;
+        int biggest = Integer.MIN_VALUE;
+        for (int i = 0; i < values.length; i++) {
+            int current = values[i];
+            if (current > biggest) {
+                biggest = current;
+            }
+        }
+        return biggest;
     }
 }
