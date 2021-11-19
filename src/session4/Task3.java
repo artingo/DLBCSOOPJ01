@@ -22,15 +22,15 @@ import java.util.Scanner;
  */
 public class Task3 {
     public static void main(String[] args) {
+        Task3 instance = new Task3();
         Scanner scanner = new Scanner(System.in);
 
         // get 4 numbers from the user, i.e. 2 fractions
         // write your code from here
-        Fraction a = null, b = null;
-
+        Fraction a = instance.inputFraction(scanner);
+        Fraction b = instance.inputFraction(scanner);
         // until here --------------
         scanner.close();
-        Task3 instance = new Task3();
 
         Fraction additionResult = instance.addFractions(a, b);
         System.out.println("additionResult = " + additionResult);
@@ -46,8 +46,21 @@ public class Task3 {
     }
 
     /**
+     * Scans 2 integers and returns the corresponding fraction
+     *
+     * @param scanner as Scanner
+     * @return fraction as Fraction
+     */
+    private Fraction inputFraction(Scanner scanner) {
+        // write your code here
+
+        return new Fraction(1, 2);
+    }
+
+    /**
      * Adds two fractions and returns the result as fraction
-     * @param first as Fraction - the first fraction
+     *
+     * @param first  as Fraction - the first fraction
      * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
@@ -59,7 +72,8 @@ public class Task3 {
 
     /**
      * Subtracts two fractions and returns the result as fraction
-     * @param first as Fraction - the first fraction
+     *
+     * @param first  as Fraction - the first fraction
      * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
@@ -71,7 +85,8 @@ public class Task3 {
 
     /**
      * Multiplies two fractions and returns the result as fraction
-     * @param first as Fraction - the first fraction
+     *
+     * @param first  as Fraction - the first fraction
      * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
@@ -83,7 +98,8 @@ public class Task3 {
 
     /**
      * Divides two fractions and returns the result as fraction
-     * @param first as Fraction - the first fraction
+     *
+     * @param first  as Fraction - the first fraction
      * @param second as Fraction - the second fraction
      * @return result as Fraction
      */
