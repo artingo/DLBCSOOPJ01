@@ -31,6 +31,4 @@ public class Session4 {
             t = (c / t + t) / 2.0;
         return t;
     }
-
-
 }
