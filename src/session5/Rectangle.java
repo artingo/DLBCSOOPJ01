@@ -2,9 +2,13 @@ package session5;
 
 public class Rectangle {
     // insert class variables for width and height
+    double width;
+    double height;
 
     public Rectangle(double width, double height) {
         // complete the constructor
+        this.width = width;
+        this.height = height;
     }
 
     /**
@@ -14,7 +18,8 @@ public class Rectangle {
      */
     public double getPerimeter() {
         // write your code here
-        return 0;
+        double perimeter = 2 * width + 2 * height;
+        return perimeter;
     }
 
     /**
@@ -23,6 +28,8 @@ public class Rectangle {
      * @return area as double
      */
     public double getArea() {
-        return 0;
+        // write your code here
+        double area = width * height;
+        return area;
     }
 }

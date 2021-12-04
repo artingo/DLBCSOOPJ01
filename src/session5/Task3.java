@@ -7,7 +7,7 @@ package session5;
 public class Task3 {
     public static void main(String[] args) {
         // make this code run
-        // Fraction fraction = new Fraction(1, 2);
-        // System.out.println("fraction = " + fraction);
+         Fraction fraction = new Fraction(1, 2);
+         System.out.println("fraction = " + fraction);
     }
 }
