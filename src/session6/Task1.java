@@ -2,8 +2,10 @@ package session6;
 
 /**
  * Develop a program to manage a fleet of vehicles.
- * 1. create a vehicle with
- * 2.
+ * A vehicle is represented by a chassis number, model, mileage, tank level, average fuel consumption and type of fuel.
+ * Implement a class Vehicle. Add methods for refueling and driving the vehicle and that calculate the remaining range.
+ * Then implement a class PlugInHybrid, that is a subclass of Vehicle. In comparison to Vehicle it also has a battery,
+ * which allows the car to travel 50 km using power. Consider this in your methods.
  */
 public class Task1 {
     public static void main(String[] args) {
