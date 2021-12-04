@@ -11,6 +11,8 @@ public class Vehicle {
     protected double tankLevel;
     protected double consumption; // i.e. liters fuel per kilometer
     protected Fuel fuelType;
+    // assume all vehicles have a fixed tank capacity of 50 liters
+    private static final double TANK_CAPACITY = 50.0;
 
     public Vehicle(String model, Fuel fuelType, double consumption) {
         this.model = model;
@@ -24,6 +26,8 @@ public class Vehicle {
      * @return tankLevel as double - the new tank level
      */
     public double refuel(double liters) {
+        Fuel fuel = (fuelType == Fuel.HYBRID) ? Fuel.GASOLINE : fuelType;
+        System.out.println(model + " was refueled " + liters + " liters of " + fuel.name().toLowerCase());
         // write your code here
         return 0.0;
     }
@@ -34,6 +38,7 @@ public class Vehicle {
      * @return remainingRange as double - how many kilometers range remain
      */
     public double drive (double distance) {
+        System.out.println(model + " is driving " + distance + " kilometers");
         // write your code here
         return 0.0;
     }
@@ -43,6 +48,7 @@ public class Vehicle {
      * @return remainingRange as double
      */
     public double getRemainingRange() {
+        System.out.print(model + "'s remaining range: ");
         // write your code here
         return 0.0;
     }

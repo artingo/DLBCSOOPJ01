@@ -16,6 +16,8 @@ public class PlugInHybrid extends Vehicle {
      */
     @Override
     public double getRemainingRange() {
+        // call 'getRemainingRange()' from base class, first
+        // write your code here
         return 0.0;
     }
 

@@ -11,13 +11,13 @@ public class Task1 {
         car.drive(500);
         car.refuel(30.33);
         double carRange = car.getRemainingRange();
-        System.out.println("car range = " + carRange);
+        System.out.println(carRange + "\n");
 
         PlugInHybrid hybrid = new PlugInHybrid("Prius", 3.8);
         hybrid.drive(500);
         hybrid.refuel(30.33);
         double hybridRange = hybrid.getRemainingRange();
-        System.out.println("hybrid range = " + hybridRange);
+        System.out.println(hybridRange);
     }
 
 
